@@ -1,0 +1,6 @@
+┬ abstract Product -- price: double | stock: int | buy: (num: int) => double | restock: (amount: int) => void
+├─┬ abstract ElectronicProduct -- brand: String, int batteryLife | charge: (amount) => void | static compatible: (a, b) => boolean
+│ ├── Phone -- cameraMp: double | takePhoto: () => String | getCameraQuality: () => String
+│ └── Computer -- processorSpeedGHz: double | getClocksPerSecond: () => double | canProcess: (difficulty: String) => boolean
+├── Apple -- toExpire: int, daysPast | expired: () => boolean | passDay: () => void
+└── Shirt -- size: String | fits: (exactSize: String) => String | lookAt: () => String
